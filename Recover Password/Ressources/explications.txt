@@ -1,0 +1,5 @@
+page : http://192.168.83.128/index.php?page=Recover
+
+-Inspecter l'élément du bouton "Submit"
+-Dans sont <form>, modifier la value de l'input "mail"
+-Submit
