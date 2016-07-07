@@ -1,0 +1,5 @@
+page : http://192.168.120.128/?page=feedback
+
+-Inspecter l'élément de l'<input type="text">
+-Supprimer l'attribut maxlength
+-Écrire du code HTML dans ce meme input et submit
