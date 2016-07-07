@@ -1,0 +1,5 @@
+Si on décrype le hash md5 de du cookie I_am_admin , on découvre qu'il signifie "false".
+
+On hash alors, avec md5, "true" et a l'aide d'un plugin on edite le cookie avec ce hash.
+
+De retour sur le site, on change de page, et une alert() nous donne le flag
