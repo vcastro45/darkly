@@ -1,0 +1,8 @@
+/robots.txt
+
+/whatever
+/whatever/htpasswd
+
+/admin
+
+insert login : root and unhashed (md5) password : dragon
