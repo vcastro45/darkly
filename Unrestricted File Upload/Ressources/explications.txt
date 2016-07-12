@@ -1,0 +1,4 @@
+172.16.216.128/?page=Upload
+
+Uploader un fichier .php en utilisant Burp Proxy et altérer les données.
+Modifier le Content-Type pour mettre image/jpeg
