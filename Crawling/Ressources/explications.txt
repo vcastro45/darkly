@@ -1,0 +1,5 @@
+Utiliser le crawler (ATTENTION, il faut le déplacer dans ~/http/MyWebSite/ et lancer PAMP et ne pas oublier de modifier l'URL)
+
+Patienter (3 a 5 minutes) et regarder dans la console.
+
+récupérer le hash et l'encrypter en SHA256
